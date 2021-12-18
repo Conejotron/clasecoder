@@ -1,0 +1,46 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+/*----------------HEADER-----------*/
+.header{
+    background-image: url("./imagenes/banertilla.jpg");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----------------NAVBAR  */
+
+.header__navbar ul{
+    padding: 2rem;
+    list-style-type: none;
+}
+.header__navbar li{
+    display: inline-block;
+}
+.header__navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    /* text-align: center: */
+    color: rgb(152, 252, 255);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    background-color: rgb(39, 1, 255);
+    padding: 1.1rem;
+
+}
+.header__titulo {
+    color: darkgray;
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+/*---------------CONTENIDO----------------*/
+.section__contenido{
+    background-color: darkmagenta;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
