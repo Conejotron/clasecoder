@@ -8,54 +8,59 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="contenedor">
+    <header class="header">
+            
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Redes</a>
+                <ul class="sub">
+                <li><a href="https://www.facebook.com/Piporritos">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Whatsapp</a></li>
+            </li>
+                </ul>
+            <li><a href="">Acerca de</a> 
+                <ul class="sub">
+                    <li><a href="ayuda.html">Como comprar</a></li>
+                    <li><a href="QuienesSomos.html">Quienes somos</a></li>
+                    <li><a href="gallery.html">Galeria de productos</a></li>
+            </li> 
+                </ul>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>                   
+        <img src="./imagenes/logo-piporritos.png" alt="">
+    </header> 
+           
     <section>
-        <h2 style="color:rgb(255, 255, 255);">Contacto</h2>
-        <form action="">
-            <fieldset>
-                <legend style="color:rgb(255, 255, 255);">Formulario de contacto</legend>
-            <label for="nombre" style="color:rgb(255, 255, 255);">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required>
-            <br>
-            <br>
-            <label for="apellido" style="color:rgb(255, 255, 255);">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" required>
-            <br>
-            <br>
-            <label for="correo" style="color:rgb(255, 255, 255);">Correo</label>
-            <input type="text" name="correo" id="correo" placeholder="ingresa tu correo" required>
-            <br>
-            <br>
-            <label for="clave" style="color:rgb(255, 255, 255);">Contraseña</label>
-            <input type="password" name="clave" id="clave">
-            <br>
-            <br>
-            <label for="consulta" style="color:rgb(255, 255, 255);"></label>
-            <br>
-            <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-            <br>
-            <br>
-            <label for="talle" style="color:rgb(255, 255, 255);">Talle:</label>
-            <select name=talle >
-                <option value="L">Large</option>
-                <option value="S">Small</option>
-                <option value="M">Medium</option>
-                <option value="XL">X-large</option>
-            </select>
-            <br>
-            <br>
-<label for="articulos" style="color:rgb(255, 255, 255);">Articulos</label>
-<input type="checkbox">
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-            <br>
-            <br>
-        </fieldset>
+        <form action="#" target="" method="get" name="formDatosPersonales">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+        
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+        
+            <label for="email" />Email</label>
+            <input type="email" name="email" id="email" placeholder="email" required />
+        
+            <label for="asunto">Asunto</label>
+            <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+        
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+            <input type="submit" name="enviar" value="enviar datos"/>
         </form>
+        
     </section>
+    <main class="contenido">  
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sy6DXY3NRqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
     <footer class="footer">
-        <p style="color:rgb(255, 255, 255);">Author: Daniel Arenas c.</p>
+        <p>Author: Daniel Arenas c.</p>
         <p><a href="mailto:daniel.arenasc@gmail.com">Daniel.arenasc@gmail.com</a></p>
     </footer>
+</div>
 </body>
+
 </html>
