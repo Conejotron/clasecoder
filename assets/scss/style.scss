@@ -17,15 +17,13 @@
     05. Product CSS
     06. Single Product CSS
     07. Cart CSS
-    08. Checkout CSS
-    09. Sidebar CSS
-    10. Feature CSS
-    11. Testimonial CSS
-    12. Blog CSS
-    13. Brand CSS
-    14. Login & Register CSS
-    15. Contact CSS
-    16. Footer CSS
+    08. Feature CSS
+    09. Testimonial CSS
+    10. Blog CSS
+    11. Brand CSS
+    12. Contact CSS
+    13. Footer CSS
+    
 
 -----------------------------------------------------------------------------------*/
 @import 'variabls';
@@ -36,12 +34,9 @@
 @import 'product';
 @import 'single-product';
 @import 'cart';
-@import 'checkout';
-@import 'sidebar';
 @import 'feature';
 @import 'testimonial';
 @import 'blog';
 @import 'brand';
-@import 'login-register';
 @import 'contact';
 @import 'footer';

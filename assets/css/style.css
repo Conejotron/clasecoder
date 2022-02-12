@@ -17,15 +17,13 @@
     05. Product CSS
     06. Single Product CSS
     07. Cart CSS
-    08. Checkout CSS
-    09. Sidebar CSS
-    10. Feature CSS
-    11. Testimonial CSS
-    12. Blog CSS
-    13. Brand CSS
-    14. Login & Register CSS
-    15. Contact CSS
-    16. Footer CSS
+    08. Feature CSS
+    09. Testimonial CSS
+    10. Blog CSS
+    11. Brand CSS
+    12. Contact CSS
+    13. Footer CSS
+    
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -657,6 +655,150 @@ img.mfp-img {
 }
 
 /* End: Video Responsive */
+/*-- Sidebar --*/
+.sidebar {
+  margin-bottom: 40px;
+  float: left;
+  width: 100%;
+  clear: both;
+  /*-- Sidebar Title --*/
+}
+
+.sidebar:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar .sidebar-title {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  color: #1a161e;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.sidebar .sidebar-title::before {
+  background-color: #94c7eb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 70px;
+  content: "";
+}
+
+/*-- Sidebar BLog Wrap --*/
+/*-- Sidebar BLog --*/
+.sidebar-blog {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.sidebar-blog:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-blog .image {
+  width: 80px;
+  float: left;
+  background-color: #f6f7f8;
+  margin-right: 15px;
+}
+
+.sidebar-blog .image img {
+  width: 100%;
+}
+
+.sidebar-blog .content {
+  overflow: hidden;
+}
+
+.sidebar-blog .content .title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 22px;
+  display: block;
+  color: #1a161e;
+  margin-top: -5px;
+}
+
+.sidebar-blog .content .title:hover {
+  color: #ff708a;
+}
+
+.sidebar-blog .content .date {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  color: #1a161e;
+}
+
+/*-- Sidebar Tag --*/
+.sidebar-tag li {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.sidebar-tag li::after {
+  content: "/";
+  margin: 0 5px;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 14px;
+}
+
+.sidebar-tag li:last-child::after {
+  display: none;
+}
+
+.sidebar-tag li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a161e;
+  text-transform: capitalize;
+}
+
+.sidebar-tag li a:hover {
+  color: #ff708a;
+}
+
+/*-- Sidebar List --*/
+.sidebar-list li {
+  margin-bottom: 15px;
+}
+
+.sidebar-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-list li a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a161e;
+}
+
+.sidebar-list li a .num {
+  float: right;
+}
+
+.sidebar-list li a .color {
+  float: left;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50px;
+  margin: 6px 10px 6px 0;
+}
+
+.sidebar-list li a:hover {
+  color: #ff708a;
+}
+
 /*---------------------------------------
     02. Header CSS
 -----------------------------------------*/
@@ -4844,628 +4986,8 @@ img.mfp-img {
   background-color: #ff708a;
 }
 
-/*---------------------------------------
-    08. Checkout CSS
------------------------------------------*/
-/*-- Checkout Title --*/
-.checkout-title {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-}
-
-/*-- Checkout Form --*/
-.checkout-form label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 12px;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: #1a161e;
-}
-
-.checkout-form .nice-select {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid #666666;
-  border-radius: 50px;
-  line-height: 23px;
-  padding: 10px 20px;
-  font-size: 14px;
-  height: 45px;
-  color: #1a161e;
-  margin-bottom: 15px;
-}
-
-.checkout-form .nice-select::after {
-  width: 6px;
-  height: 6px;
-  border-width: 1px;
-  right: 20px;
-  border-color: #333333;
-}
-
-.checkout-form .nice-select .current {
-  color: #1a161e;
-  display: block;
-  line-height: 23px;
-}
-
-.checkout-form .nice-select .list {
-  width: 100%;
-}
-
-.checkout-form input {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid #666666;
-  border-radius: 50px;
-  line-height: 23px;
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #1a161e;
-  margin-bottom: 15px;
-}
-
-.checkout-form input[type="checkbox"] {
-  width: auto;
-}
-
-.checkout-form .check-box {
-  float: left;
-  margin-right: 70px;
-}
-
-.checkout-form .check-box:last-child {
-  margin-right: 0;
-}
-
-.checkout-form .check-box input[type="checkbox"] {
-  display: none;
-}
-
-.checkout-form .check-box input[type="checkbox"] + label {
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #1a161e;
-  margin: 0;
-}
-
-.checkout-form .check-box input[type="checkbox"] + label::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  display: block;
-  border: 2px solid #666666;
-  content: "";
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.checkout-form .check-box input[type="checkbox"] + label::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  content: "\f00c";
-  font-family: Fontawesome;
-  font-size: 12px;
-  line-height: 20px;
-  opacity: 0;
-  color: #1a161e;
-  width: 20px;
-  text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.checkout-form .check-box input[type="checkbox"]:checked + label::before {
-  border: 2px solid #1a161e;
-}
-
-.checkout-form .check-box input[type="checkbox"]:checked + label::after {
-  opacity: 1;
-}
-
-/*-- Shipping Form --*/
-#shipping-form {
-  display: none;
-}
-
-/*-- Checkout Cart Total --*/
-.checkout-cart-total {
-  background-color: #f6f7f8;
-  padding: 45px;
-}
-
-@media only screen and (max-width: 479px) {
-  .checkout-cart-total {
-    padding: 30px;
-  }
-}
-
-.checkout-cart-total h4 {
-  -ms-flex-preferred-size: 18px;
-      flex-basis: 18px;
-  line-height: 23px;
-  font-weight: 600;
-}
-
-.checkout-cart-total h4:first-child {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-.checkout-cart-total h4:last-child {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.checkout-cart-total h4 span {
-  float: right;
-  display: block;
-}
-
-.checkout-cart-total ul {
-  border-bottom: 1px solid #666666;
-}
-
-.checkout-cart-total ul li {
-  color: #333333;
-  font-size: 14px;
-  line-height: 23px;
-  display: block;
-  margin-bottom: 16px;
-}
-
-.checkout-cart-total ul li span {
-  color: #1a161e;
-  float: right;
-}
-
-@media only screen and (max-width: 479px) {
-  .checkout-cart-total ul li {
-    position: relative;
-    padding-right: 60px;
-  }
-  .checkout-cart-total ul li span {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-.checkout-cart-total p {
-  font-size: 14px;
-  line-height: 30px;
-  color: #505050;
-  padding: 10px 0;
-  border-bottom: 1px solid #666666;
-  margin: 0;
-}
-
-.checkout-cart-total p span {
-  float: right;
-}
-
-/*-- Checkout Payment Method --*/
-.checkout-payment-method {
-  background-color: #f6f7f8;
-  padding: 45px;
-}
-
-@media only screen and (max-width: 479px) {
-  .checkout-payment-method {
-    padding: 30px;
-  }
-}
-
-/*-- Single Payment Method --*/
-.single-method {
-  margin-bottom: 20px;
-}
-
-.single-method:last-child {
-  margin-bottom: 0;
-}
-
-.single-method input[type="radio"] {
-  display: none;
-}
-
-.single-method input[type="radio"] + label {
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #1a161e;
-  margin: 0;
-}
-
-.single-method input[type="radio"] + label::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  display: block;
-  border: 2px solid #666666;
-  content: "";
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.single-method input[type="radio"] + label::after {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  display: block;
-  content: "";
-  opacity: 0;
-  background-color: #1a161e;
-  width: 10px;
-  text-align: center;
-  height: 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.single-method input[type="radio"]:checked + label::before {
-  border: 2px solid #1a161e;
-}
-
-.single-method input[type="radio"]:checked + label::after {
-  opacity: 1;
-}
-
-.single-method input[type="checkbox"] {
-  display: none;
-}
-
-.single-method input[type="checkbox"] + label {
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  margin: 0;
-}
-
-.single-method input[type="checkbox"] + label::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  display: block;
-  border: 2px solid #666666;
-  content: "";
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.single-method input[type="checkbox"] + label::after {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  display: block;
-  content: "";
-  opacity: 0;
-  background-color: #1a161e;
-  width: 8px;
-  text-align: center;
-  height: 8px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.single-method input[type="checkbox"]:checked + label::before {
-  border: 2px solid #1a161e;
-}
-
-.single-method input[type="checkbox"]:checked + label::after {
-  opacity: 1;
-}
-
-.single-method p {
-  display: none;
-  margin-top: 8px;
-  font-size: 14px;
-  color: #333333;
-  line-height: 23px;
-}
-
-/*-- Place Order --*/
-.place-order {
-  margin-top: 40px;
-  border-radius: 50px;
-  height: 44px;
-  border: none;
-  line-height: 24px;
-  padding: 10px 30px;
-  float: left;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #1a161e;
-}
-
-.place-order:hover {
-  background-color: #ff708a;
-}
-
 /*----------------------------------------*/
-/*  09. Sidebar CSS
-/*----------------------------------------*/
-/*-- Sidebar --*/
-.sidebar {
-  margin-bottom: 40px;
-  float: left;
-  width: 100%;
-  clear: both;
-  /*-- Sidebar Title --*/
-}
-
-.sidebar:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar .sidebar-title {
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 600;
-  color: #1a161e;
-  text-transform: uppercase;
-  padding-bottom: 7px;
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.sidebar .sidebar-title::before {
-  background-color: #94c7eb;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 70px;
-  content: "";
-}
-
-/*-- Sidebar List --*/
-.sidebar-list li {
-  margin-bottom: 15px;
-}
-
-.sidebar-list li:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar-list li a {
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1a161e;
-}
-
-.sidebar-list li a .num {
-  float: right;
-}
-
-.sidebar-list li a .color {
-  float: left;
-  width: 12px;
-  height: 12px;
-  display: block;
-  border-radius: 50px;
-  margin: 6px 10px 6px 0;
-}
-
-.sidebar-list li a:hover {
-  color: #ff708a;
-}
-
-/*-- Sidebar Tag --*/
-.sidebar-tag li {
-  float: left;
-  margin-bottom: 5px;
-}
-
-.sidebar-tag li::after {
-  content: "/";
-  margin: 0 5px;
-  color: rgba(51, 51, 51, 0.7);
-  font-size: 14px;
-}
-
-.sidebar-tag li:last-child::after {
-  display: none;
-}
-
-.sidebar-tag li a {
-  font-size: 16px;
-  line-height: 24px;
-  color: #1a161e;
-  text-transform: capitalize;
-}
-
-.sidebar-tag li a:hover {
-  color: #ff708a;
-}
-
-/*-- Sidebar BLog Wrap --*/
-/*-- Sidebar BLog --*/
-.sidebar-blog {
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.sidebar-blog:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar-blog .image {
-  width: 80px;
-  float: left;
-  background-color: #f6f7f8;
-  margin-right: 15px;
-}
-
-.sidebar-blog .image img {
-  width: 100%;
-}
-
-.sidebar-blog .content {
-  overflow: hidden;
-}
-
-.sidebar-blog .content .title {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  line-height: 22px;
-  display: block;
-  color: #1a161e;
-  margin-top: -5px;
-}
-
-.sidebar-blog .content .title:hover {
-  color: #ff708a;
-}
-
-.sidebar-blog .content .date {
-  font-size: 14px;
-  line-height: 20px;
-  display: block;
-  color: #1a161e;
-}
-
-/*-- Sidebar Product Wrap --*/
-/*-- Sidebar Product --*/
-.sidebar-product {
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.sidebar-product:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar-product .image {
-  width: 80px;
-  float: left;
-  background-color: #f6f7f8;
-  margin-right: 15px;
-}
-
-.sidebar-product .image img {
-  width: 100%;
-}
-
-.sidebar-product .content {
-  overflow: hidden;
-}
-
-.sidebar-product .content .title {
-  font-size: 16px;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: #1a161e;
-}
-
-.sidebar-product .content .title:hover {
-  color: #ff708a;
-}
-
-.sidebar-product .content .price {
-  font-size: 16px;
-  display: block;
-  color: #ff708a;
-  font-weight: 600;
-}
-
-.sidebar-product .content .price .old {
-  color: #94c7eb;
-  position: relative;
-  margin-left: 3px;
-}
-
-.sidebar-product .content .price .old::before {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #94c7eb;
-}
-
-.sidebar-product .content .ratting {
-  display: block;
-}
-
-.sidebar-product .content .ratting i {
-  font-size: 12px;
-  color: #94c7eb;
-}
-
-/*-- Sidebar Price --*/
-.sidebar-price #price-range {
-  width: 100%;
-  height: 5px;
-  margin: 5px 0;
-  background-color: #94c7eb;
-  position: relative;
-  float: left;
-}
-
-.sidebar-price #price-range .ui-slider-range {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  background-color: #ff708a;
-}
-
-.sidebar-price #price-range .ui-slider-handle {
-  background-color: #ff708a;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
-  display: block;
-  top: -5px;
-  -webkit-transition: none;
-  transition: none;
-  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.sidebar-price #price-amount {
-  font-size: 14px;
-  color: #1a161e;
-  line-height: 24px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  margin-top: 12px;
-}
-
-/*----------------------------------------*/
-/*  10. Feature CSS
+/*  08. Feature CSS
 /*----------------------------------------*/
 .feature-section {
   background-repeat: repeat;
@@ -5655,7 +5177,7 @@ img.mfp-img {
 }
 
 /*----------------------------------------*/
-/*  11. Testimonial CSS
+/*  09. Testimonial CSS
 /*----------------------------------------*/
 /*-- Testimonial Item --*/
 .testimonial-item {
@@ -5717,7 +5239,7 @@ img.mfp-img {
 }
 
 /*----------------------------------------*/
-/*  12. Blog CSS
+/*  10 Blog CSS
 /*----------------------------------------*/
 /*-- Blog Item --*/
 .blog-item {
@@ -6407,7 +5929,7 @@ img.mfp-img {
 }
 
 /*----------------------------------------*/
-/*  13. Brand CSS
+/*  11. Brand CSS
 /*----------------------------------------*/
 .brand-slider {
   width: 100%;
@@ -6431,108 +5953,8 @@ img.mfp-img {
   max-width: 100%;
 }
 
-/*---------------------------------------
-    14. Login & Register CSS
------------------------------------------*/
-/*-- Login & Register Form Wrap --*/
-.login-register-form-wrap {
-  /*-- Social Login --*/
-}
-
-.login-register-form-wrap h3 {
-  font-size: 24px;
-  line-height: 1;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 600;
-}
-
-.login-register-form-wrap h4 {
-  font-size: 18px;
-  line-height: 1;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.login-register-form-wrap input {
-  width: 100%;
-  border: 1px solid #333333;
-  background-color: transparent;
-  border-radius: 50px;
-  height: 44px;
-  line-height: 22px;
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-.login-register-form-wrap input[type="submit"] {
-  width: auto;
-  background-color: #1a161e;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  font-weight: 600;
-}
-
-.login-register-form-wrap input[type="submit"]:hover {
-  background-color: #ff708a;
-  border-color: #ff708a;
-}
-
-.login-register-form-wrap .social-login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.login-register-form-wrap .social-login a {
-  width: 36px;
-  height: 36px;
-  border: 1px solid #1a161e;
-  color: #1a161e;
-  border-radius: 50%;
-  text-align: center;
-  margin-right: 15px;
-}
-
-.login-register-form-wrap .social-login a i {
-  font-size: 14px;
-  line-height: 34px;
-}
-
-.login-register-form-wrap .social-login a:hover {
-  background-color: #ff708a;
-  border-color: #ff708a;
-  color: #ffffff;
-}
-
-/*-- Login & Register Separator --*/
-.login-register-separator {
-  width: 1px;
-  height: 150px;
-  background-color: #ccc;
-  display: block;
-  margin: auto;
-  margin-top: 50px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .login-register-separator {
-    margin-top: 0;
-    height: 80px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .login-register-separator {
-    margin-top: 0;
-    height: 80px;
-  }
-}
-
 /*----------------------------------------*/
-/*  15. Contact CSS
+/*  12. Contact CSS
 /*----------------------------------------*/
 /*-- Contact Info Wrap --*/
 .contact-info-wrap h3 {
@@ -6630,7 +6052,7 @@ img.mfp-img {
 }
 
 /*----------------------------------------*/
-/*  16. Footer CSS
+/*  13. Footer CSS
 /*----------------------------------------*/
 .footer-top-section {
   background-image: url(../images/pattern/pattern-dot.png);
