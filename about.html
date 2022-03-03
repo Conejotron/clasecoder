@@ -24,7 +24,7 @@
 </head>
 
 <body>
-
+<header> 
 <div class="main-wrapper">
 
     
@@ -156,8 +156,8 @@
             </div>
         </div>
     </div>
-
-    
+</header>
+<main>   
     <div class="page-section section mt-80 mt-lg-60 mt-md-60 mt-sm-60 mt-xs-40 mb-40 mb-lg-20 mb-md-20 mb-sm-20 mb-xs-0">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
@@ -222,8 +222,8 @@
             </div>
         </div>
     </div>
-
-    
+</main>  
+<footer>     
     <div class="footer-top-section section bg-theme-two-light pt-80 pt-lg-60 pt-md-60 pt-sm-60 pt-xs-40 pb-40 pb-lg-20 pb-md-20 pb-sm-20 pb-xs-0">
         <div class="container">
             <div class="row">
@@ -268,18 +268,30 @@
     </div>
 
 </div>
-
+</footer>
 
 
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-<script src="assets/js/popper.min.js"></script>
 
 <script src="assets/js/bootstrap.min.js"></script>
 
 <script src="assets/js/plugins.js"></script>
 
 <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+56965968547", 
+            call_to_action: "Envíanos un mensaje", 
+            position: "left", 
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 
 </body>
 
