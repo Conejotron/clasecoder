@@ -6763,3 +6763,6 @@ img.mfp-img {
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
+.cargando {
+  display: none;
+}

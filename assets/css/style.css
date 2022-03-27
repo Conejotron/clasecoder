@@ -799,6 +799,10 @@ img.mfp-img {
   color: #ff708a;
 }
 
+.cargando {
+  display: none;
+}
+
 /*---------------------------------------
     02. Header CSS
 -----------------------------------------*/
@@ -6203,3 +6207,6 @@ img.mfp-img {
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
+#cargando {
+  display: none;
+}

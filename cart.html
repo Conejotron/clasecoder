@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="assets/css/helper.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+
+    <script src="assets/js/popper.min.js"></script>
     
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -72,11 +76,16 @@
                                 <img src="assets/images/logo-piporritos.png" alt="Piporritos">
                             </a>
                         </div>
-                    </div>
+                    </div>    
+                        
+                    
+                    
 
                     <div class="col order-2 order-lg-3">
+
                         
-                        <div class="header-shop-links">
+                        
+                        <div class="header-shop-links">                                   
 
                             <div class="header-search">
                                 <button class="search-toggle"><img src="assets/images/icons/search.png" alt="Search Toggle"><img class="toggle-close" src="assets/images/icons/close.png" alt="Search Toggle"></button>
@@ -86,15 +95,10 @@
                                         <button><img src="assets/images/icons/search.png" alt="Search"></button>
                                     </form>
                                 </div>
-                            </div>
-
-                           
-
-                            <div class="header-mini-cart">
-                                <a href="cart.html"><img src="assets/images/icons/cart.png" alt="Cart"> <span>02($18)</span></a>
-                            </div>
-
-                        </div>
+                            </div> 
+                                               
+                                    
+                        </div> 
                     </div>
 
                     <div class="col order-3 order-lg-2">
@@ -133,6 +137,35 @@
                         </div>
                     </div>
 
+                    <div class="header-mini-cart">
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <img src="assets/images/icons/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"></img>
+                                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                        <table id="lista-carrito" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                
+                                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                                            
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>        
+
                     
                     <div class="mobile-menu order-12 d-block d-lg-none col"></div>
 
@@ -141,6 +174,10 @@
         </div>
 
     </div>
+
+    
+    
+
 
     
     <div class="page-banner-section section" style="background-image: url(assets/images/product/product-5.jpg)">
@@ -163,60 +200,87 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="cart-table table-responsive mb-40">
-                    <table> 
-                        <!-- Elementos generados a partir del JSON -->
-                        <main id="items" class="col-sm-8 row"></main>
-                        <!-- Carrito -->
-                        <aside class="col-sm-4">
-                            <h2>Carrito</h2>
-                        <!-- Elementos del carrito -->
-                            <ul id="carrito" class="list-group"></ul>
-                            <hr>
-                        <!-- Precio total -->
-                            <p class="text-right">Total: <span id="total"></span>&dollar;</p>
-                            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                        </aside>
-                    
-                    </table>  
-                </div>
-            </div>         
-            <div class="col-lg-8 col-md-7 col-12">
-                <div class="cart-buttons mb-30">
-                    <input type="submit" value="Update Cart" />
-                    <a href="shop.html">Continue Shopping</a>
-                </div>
-                <div class="cart-coupon mb-40">
-                    <h4>Coupon</h4>
-                    <p>Enter your coupon code if you have one.</p>
-                     <div class="cuppon-form">
-                        <input type="text" placeholder="Coupon code" />
-                        <input type="submit" value="Apply Coupon" />
-                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-5 col-12">
-                <div class="cart-total fix mb-40">
-                    <h3>Cart Totals</h3>
-                    <table>
-                        <tbody>
-                            <tr class="cart-subtotal">
-                                <th>Subtotal</th>
-                                <td><span class="amount" id="total"></span>&dollar;</td>
-
-                            </tr>
-                            <tr class="order-total">
-                                <th>Total</th>
-                                <td>
-                                    <strong><span class="amount" id="total"></span>&dollar;</strong>                                    
-                                </td>
-                            </tr>											
-                        </tbody>
-                    </table>
-                    <div class="proceed-to-checkout section mt-30">
-                        <a href="#">Proceed to Checkout</a>
+                <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                <form id="procesar-pago">
+                    <div class="form-group row">
+                        <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                        <div class="col-12 col-md-10">
+                            <input type="text" class="form-control" id="cliente"
+                                placeholder="Ingresa nombre cliente" name="destinatario">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                        <div class="col-12 col-md-10">
+                            <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                        </div>
+                    </div>
+
+                    <div id="carrito" class="form-group table-responsive">
+                        <table class="form-group table" id="lista-compra">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Sub Total</th>
+                                    <th scope="col">Eliminar</th>
+                                </tr>
+
+                            </thead>
+                            <tbody >
+
+                            </tbody>
+                            <tr>
+                                <div class="cart-total fix mb-40">
+                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                <!-- <th scope="col"></th> -->
+                                </div>
+                            </tr>
+                            <tr>
+                                <th colspan="4" scope="col" class="text-right">IVA :</th>
+                                <th scope="col">
+                                    <p id="igv"></p>
+                                </th>
+                                <!-- <th scope="col"></th> -->
+                            </tr>
+                            <tr>
+                                <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                <th scope="col">
+                                    <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
+                                </th>
+                                <!-- <th scope="col"></th> -->
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="row justify-content-center" id="loaders">
+                        <img id="cargando" src="assets/images/icons/cargando.gif" width="220">
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-4 mb-2">
+                            <div class="cart-buttons mb-30">
+                                <a href="shop.html" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="cart-buttons mb-30">
+                                <input type="submit" class="btn btn-success btn-block" id="procesar-compra" value="Realizar compra">
+                            </div>    
+                        </div>
+                    </div>
+                </form>
+            </div>         
+            
+               
+            </div>
+            
         </div>
     </div>
 </div>
@@ -303,8 +367,10 @@
 </div>
 </footer> 
 
+<!-- 
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script> -->
 
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/jquery-3.4.1.min.js"></script>
 
 <script src="assets/js/bootstrap.min.js"></script>
 
@@ -312,7 +378,17 @@
 
 <script src="assets/js/main.js"></script>
 
-<script src="assets/js/cart.js"></script>
+<script src="assets/js/carrito.js"></script>
+
+<script src="assets/js/pedido.js"></script>
+
+<script src="assets/js/compra.js"></script>
+
+<script src="assets/js/sweetalert2.min.js"></script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 
 <script type="text/javascript">
     (function () {

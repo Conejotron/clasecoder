@@ -1,9 +1,9 @@
 (function ($) {
     "use strict";
 
-/*-- Variables --*/
-var windows = $(window);
-var screenSize = windows.width();
+/*-- letiables --*/
+let windows = $(window);
+let screenSize = windows.width();
     
     
     
@@ -12,12 +12,12 @@ var screenSize = windows.width();
 $(window).on('load', function(){
     function productHover() {
 
-        var productInner = $('.product-inner');
-        var proImageHeight = productInner.find('img').outerHeight();
+        let productInner = $('.product-inner');
+        let proImageHeight = productInner.find('img').outerHeight();
 
         productInner.hover(
             function() {
-                var porContentHeight = $( this ).find('.content').innerHeight()-55;
+                let porContentHeight = $( this ).find('.content').innerHeight()-55;
                 $( this ).find('.image-overlay').css({
                     "height": proImageHeight - porContentHeight,
                 });
@@ -37,10 +37,10 @@ $(window).on('load', function(){
 /*--
     Menu Sticky
 -----------------------------------*/
-var sticky = $('.header-sticky');
+let sticky = $('.header-sticky');
 
 windows.on('scroll', function() {
-    var scroll = windows.scrollTop();
+    let scroll = windows.scrollTop();
     if (scroll < 300) {
         sticky.removeClass('is-sticky');
     }else{
@@ -51,7 +51,7 @@ windows.on('scroll', function() {
 /*--
     Mobile Menu
 ------------------------*/
-var mainMenuNav = $('.main-menu nav');
+let mainMenuNav = $('.main-menu nav');
 mainMenuNav.meanmenu({
     meanScreenWidth: '991',
     meanMenuContainer: '.mobile-menu',
@@ -64,8 +64,8 @@ mainMenuNav.meanmenu({
 /*--
     Header Search
 ------------------------*/
-var searchToggle = $('.search-toggle');
-var searchWrap = $('.header-search-wrap');
+let searchToggle = $('.search-toggle');
+let searchWrap = $('.header-search-wrap');
 
 searchToggle.on('click', function(){
     
@@ -81,9 +81,9 @@ searchToggle.on('click', function(){
 /*--
     Header Cart
 ------------------------*/
-var headerCart = $('.header-cart');
-var closeCart = $('.close-cart, .cart-overlay');
-var miniCartWrap = $('.mini-cart-wrap');
+let headerCart = $('.header-cart');
+let closeCart = $('.close-cart, .cart-overlay');
+let miniCartWrap = $('.mini-cart-wrap');
 
 headerCart.on('click', function(e){
     e.preventDefault();
@@ -99,7 +99,7 @@ closeCart.on('click', function(e){
 /*--
     Hero Slider
 --------------------------------------------*/
-var heroSlider = $('.hero-slider');
+let heroSlider = $('.hero-slider');
 heroSlider.slick({
     arrows: true,
     autoplay: false,
@@ -110,7 +110,7 @@ heroSlider.slick({
     fade: true,
     infinite: true,
     slidesToShow: 1,
-    prevArrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="icofont icofont-long-arrow-right"></i></button>',
 });
     
@@ -124,7 +124,7 @@ $('.small-product-slider').slick({
     infinite: true,
     slidesToShow: 4,
     rows: 2,
-    prevArrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="icofont icofont-long-arrow-right"></i></button>',
     responsive: [
         {
@@ -164,7 +164,7 @@ $('.best-deal-slider').slick({
     autoplay: false,
     infinite: true,
     slidesToShow: 1,
-    prevArrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="icofont icofont-long-arrow-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="icofont icofont-long-arrow-right"></i></button>',
 });
     
@@ -177,7 +177,7 @@ $('.testimonial-slider').slick({
     autoplay: false,
     infinite: true,
     slidesToShow: 2,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
     responsive: [
         {
@@ -198,7 +198,7 @@ $('.brand-slider').slick({
     autoplay: false,
     infinite: false,
     slidesToShow: 6,
-    prevArrow: '<button type="button" class="slick-prev"><i class="icofont icofont-rounded-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="icofont icofont-rounded-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="icofont icofont-rounded-right"></i></button>',
     responsive: [
         {
@@ -237,7 +237,7 @@ $('.pro-thumb-img').slick({
     autoplay: false,
     infinite: true,
     slidesToShow: 4,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
     responsive: [
         {
@@ -272,7 +272,7 @@ $('.related-product-slider-1').slick({
     autoplay: false,
     infinite: true,
     slidesToShow: 4,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
     responsive: [
         {
@@ -303,7 +303,7 @@ $('.related-product-slider-2').slick({
     autoplay: false,
     infinite: true,
     slidesToShow: 3,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+    preletrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
     responsive: [
         {
@@ -333,13 +333,13 @@ $('.related-product-slider-2').slick({
 	Product Zoom
 --------------------------------*/
 // Instantiate EasyZoom instances
-var $easyzoom = $('.easyzoom').easyZoom();
+let $easyzoom = $('.easyzoom').easyZoom();
 
 // Setup thumbnails example
-var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+let api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
 
 $('.pro-thumb-img').on('click', 'a', function(e) {
-    var $this = $(this);
+    let $this = $(this);
 
     e.preventDefault();
 
@@ -351,7 +351,7 @@ $('.pro-thumb-img').on('click', 'a', function(e) {
 	Count Down Timer
 ------------------------*/
 $('[data-countdown]').each(function() {
-	var $this = $(this), finalDate = $(this).data('countdown');
+	let $this = $(this), finalDate = $(this).data('countdown');
 	$this.countdown(finalDate, function(event) {
 		$this.html(event.strftime('<span class="cdown day"><span class="time-count">%-D</span> <p>Days</p></span> <span class="cdown hour"><span class="time-count">%-H</span> <p>Hours</p></span> <span class="cdown minutes"><span class="time-count">%M</span> <p>Mint</p></span> <span class="cdown second"><span class="time-count">%S</span> <p>Secs</p></span>'));
 	});
@@ -393,14 +393,14 @@ $('#price-amount').val( '$' + $('#price-range').slider( 'values', 0 ) +
 $('.pro-qty').prepend('<span class="dec qtybtn"><i class="ti-minus"></i></span>');
 $('.pro-qty').append('<span class="inc qtybtn"><i class="ti-plus"></i></span>');
 $('.qtybtn').on('click', function() {
-	var $button = $(this);
-	var oldValue = $button.parent().find('input').val();
+	let $button = $(this);
+	let oldValue = $button.parent().find('input').val();
 	if ($button.hasClass('inc')) {
-	  var newVal = parseFloat(oldValue) + 1;
+	  let newVal = parseFloat(oldValue) + 1;
 	} else {
 	   // Don't allow decrementing below zero
 	  if (oldValue > 0) {
-		var newVal = parseFloat(oldValue) - 1;
+		let newVal = parseFloat(oldValue) - 1;
 		} else {
 		newVal = 0;
 	  }
@@ -424,7 +424,7 @@ $('[data-shipping]').on('click', function(){
 --------------------------------*/
 $('[name="payment-method"]').on('click', function(){
     
-    var $value = $(this).attr('value');
+    let $value = $(this).attr('value');
 
     $('.single-method p').slideUp();
     $('[data-method="'+$value+'"]').slideDown();

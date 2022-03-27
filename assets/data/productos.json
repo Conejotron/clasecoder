@@ -1,0 +1,65 @@
+[
+	{
+		"id": 1,
+		"marca": "Producto 1",
+		"imagen": "/assets/images/product/product-1.jpg",
+		"precio": "20",
+		"detalles": ["Gorrito de lana"]
+	},
+	{
+		"id": 2,
+		"marca": "Producto 2",
+		"imagen": "/assets/images/product/product-5.jpg",
+		"precio": "10",
+		"detalles": [" "]
+	},
+	{
+		"id": 3,
+		"marca": "Producto 3",
+		"imagen": "/assets/images/product/product-12.jpg",
+		"precio": "30",
+		"detalles": [" "]
+	},
+	{
+		"id": 4,
+		"marca": "Producto 4",
+		"imagen": "/assets/images/product/product-3.jpg",
+		"precio": "15",
+		"detalles": [" "]
+	},
+	{
+		"id": 5,
+		"marca": "Producto 5",
+		"imagen": "/assets/images/product/product-4.jpg",
+		"precio": "35",
+		"detalles": [" "]
+	},
+	{
+		"id": 6,
+		"marca": "Producto 6",
+		"imagen": "/assets/images/product/product-7.jpg",
+		"precio": "25",
+		"detalles": [" "]
+	},
+	{
+		"id": 7,
+		"marca": "Producto 7",
+		"imagen": "/assets/images/product/product-11.jpg",
+		"precio": "42",
+		"detalles": [" "]
+	},
+	{
+		"id": 8,
+		"marca": "Producto 8",
+		"imagen": "/assets/images/product/product-8.jpg",
+		"precio": "869",
+		"detalles": [" "]
+	},
+	{
+		"id": 9,
+		"marca": "Producto 9",
+		"imagen": "/assets/images/product/product-10.jpg",
+		"precio": "25",
+		"detalles": [" "]
+	}
+]
