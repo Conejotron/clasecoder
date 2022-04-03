@@ -132,7 +132,7 @@ class Carrito {
         });
     }
 
-    //Mostrar los productos guardados en el LS en cart.html
+    //Mostrar los productos guardados en el LS en compra.html
     leerLocalStorageCompra(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
@@ -191,14 +191,14 @@ class Carrito {
             })
         }
         else {
-            location.href = "cart.html";
+            location.href = "compra.html";
         }
     }
 
     //Calcular montos
     calcularTotal(){
         let productosLS;
-        let total = 0, igv = 0, subtotal = 0;
+        let total = 0, iva = 0, subtotal = 0;
         productosLS = this.obtenerProductosLocalStorage();
         for(let i = 0; i < productosLS.length; i++){
             let element = Number(productosLS[i].precio * productosLS[i].cantidad);
@@ -206,11 +206,11 @@ class Carrito {
             
         }
         
-        igv = parseFloat(total * 0.18).toFixed(2);
-        subtotal = parseFloat(total-igv).toFixed(2);
+        iva = parseFloat(total * 0.18).toFixed(2);
+        subtotal = parseFloat(total-iva).toFixed(2);
 
         document.getElementById('subtotal').innerHTML = "$ " + subtotal;
-        document.getElementById('igv').innerHTML = "$ " + igv;
+        document.getElementById('iva').innerHTML = "$ " + iva;
         document.getElementById('total').value = "$ " + total.toFixed(2);
     }
 

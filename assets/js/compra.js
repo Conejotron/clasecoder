@@ -86,7 +86,7 @@ function procesarCompra() {
                 cargandoGif.style.display = 'block';
 
                 const enviado = document.createElement('img');
-                enviado.src = 'img/mail.gif';
+                enviado.src = 'assets/images/icons/mail.gif';
                 enviado.style.display = 'block';
                 enviado.width = '150';
 

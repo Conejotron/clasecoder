@@ -11,55 +11,55 @@
 		"marca": "Producto 2",
 		"imagen": "/assets/images/product/product-5.jpg",
 		"precio": "10",
-		"detalles": [" "]
+		"detalles": ["Gorrito Navideño"]
 	},
 	{
 		"id": 3,
 		"marca": "Producto 3",
-		"imagen": "/assets/images/product/product-12.jpg",
+		"imagen": "/assets/images/product/best-deal-2.jpg",
 		"precio": "30",
-		"detalles": [" "]
+		"detalles": ["Jardinera cafe"]
 	},
 	{
 		"id": 4,
 		"marca": "Producto 4",
 		"imagen": "/assets/images/product/product-3.jpg",
 		"precio": "15",
-		"detalles": [" "]
+		"detalles": ["Pilucho Verde"]
 	},
 	{
 		"id": 5,
 		"marca": "Producto 5",
 		"imagen": "/assets/images/product/product-4.jpg",
 		"precio": "35",
-		"detalles": [" "]
+		"detalles": ["Bototos cafe"]
 	},
 	{
 		"id": 6,
 		"marca": "Producto 6",
-		"imagen": "/assets/images/product/product-7.jpg",
+		"imagen": "/assets/images/product/on-sale-5.jpg",
 		"precio": "25",
-		"detalles": [" "]
+		"detalles": ["Zapatillas blanco/azul"]
 	},
 	{
 		"id": 7,
 		"marca": "Producto 7",
 		"imagen": "/assets/images/product/product-11.jpg",
 		"precio": "42",
-		"detalles": [" "]
+		"detalles": ["vestido floreado"]
 	},
 	{
 		"id": 8,
 		"marca": "Producto 8",
-		"imagen": "/assets/images/product/product-8.jpg",
-		"precio": "869",
-		"detalles": [" "]
+		"imagen": "/assets/images/product/on-sale-4.jpg",
+		"precio": "86",
+		"detalles": ["zapatillas rosadas"]
 	},
 	{
 		"id": 9,
 		"marca": "Producto 9",
 		"imagen": "/assets/images/product/product-10.jpg",
 		"precio": "25",
-		"detalles": [" "]
+		"detalles": ["zapatillas ballet"]
 	}
 ]
