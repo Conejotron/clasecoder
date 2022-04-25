@@ -48,7 +48,7 @@ function procesarCompra() {
     else {
 
         //aqui se coloca el user id generado en el emailJS
-        emailjs.init('user_CEozz2F39lJJOLF5mJiDA')
+        emailjs.init('fSxG-cpM1591cEtpL')
 
         /* AGREGAR DATOS DETALLE DEL PEDIDO A UN TEXT AREA */
         const textArea = document.createElement('textarea');
@@ -91,7 +91,7 @@ function procesarCompra() {
                 enviado.width = '150';
 
                 const serviceID = 'default_service';
-                const templateID = 'template_3SA9LsqQ';
+                const templateID = 'template_rq11qr8';
 
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
