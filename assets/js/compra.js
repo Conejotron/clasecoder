@@ -33,7 +33,7 @@ function procesarCompra() {
             showConfirmButton: false,
             timer: 2000
         }).then(function () {
-            window.location = "shop.html";
+            window.location = "compra.html";
         })
     }
     else if (cliente.value === '' || correo.value === '') {
@@ -101,7 +101,7 @@ function procesarCompra() {
                         setTimeout(() => {
                             compra.vaciarLocalStorage();
                             enviado.remove();
-                            window.location = "shop.html";
+                            window.location = "compra.html";
                         }, 2000);
                     }, (err) => {
                         cargandoGif.style.display = 'none';
